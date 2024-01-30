@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //input
+        let nilai = prompt("masukan nilai") ;
+        //proses
+        if ( nilai <= 100 && nilai >= 90) {
+            console.log("Selamat Anda Lolos")
+        } 
+        else if(nilai >= 80 && nilai <= 89){
+            Jalur = prompt("silahkan pilih jalur lain");
+            if (jalur == ("raport")) {
+            console.log ("anda memilih tes raport");
+        } else if (jalur == ("prestasi")) {
+            console.log("anda memilih jalur prestasi")
+        }        
+        } 
+        else {
+            console.log("tes madiri")
+            hasiltes = prompt("masukan nilai hasil tes");
+            if (hasiltes >= 79 && hasiltes <= 100) {
+                console.log("anda lulus tes")
+            } else {
+                console.log("gagal")
+            }
+        }
+        
+    </script>
+</body>
+</html>

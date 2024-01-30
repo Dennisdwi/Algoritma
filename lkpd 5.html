@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //No.1 Mencetak 1 - 50
+        for (let a= 0; a <= 50; a++) {
+            console.log('bilangan ke -', a );
+        }
+
+        //No.2 Mencetak Bilangan Ganjil 1 - 50
+        for(let no= 1; no<=50; no+=2){
+                console.log(no)
+        }
+
+        //No.3 Mencetak bilangan genap 1 - 50
+        for(let no= 1; no<=50; no++){
+           if( no%2 == 0){
+                console.log(no)
+            }
+        }
+        
+        //No.4 Mencetak bilangan ganjil dan genap 1 - 50
+        for(let no=1; no<=50; no++){
+            if(no%2 == 0){
+                console.log(no, "adalah genap");
+            }
+            else{
+                console.log(no, "adalah ganjil");
+          }
+}
+        //No.5 Mencetak bilangan terbesar, terkecil dan rata-rata
+        let total = 0;
+        let bilanganterbesar = -Infinity;
+        let bilanganterkecil = Infinity;
+
+        for (let i = 1; i <= 20; i++) {
+            let bilangan = parseInt(prompt("Masukkan bilangan ke- ", i));
+
+            if (isNaN(bilangan)) {
+                console.log("Input bukan angka. Coba lagi.");
+                i--;
+            } else {2
+                total += bilangan;
+
+                if (bilangan > bilanganterbesar) {
+                    bilanganterbesar = bilangan;
+                }
+
+                if (bilangan < bilanganterkecil) {
+                    bilanganterkecil = bilangan;
+                }
+            }
+        }
+
+        let ratarata = total / 20;
+
+        console.log("Bilangan Terbesar: ", bilanganterbesar);
+        console.log("Bilangan Terkecil: ", bilanganterkecil);
+        console.log("Rata-rata: ", ratarata);
+    </script>
+</body>
+</html>
